@@ -102,13 +102,117 @@ html {
     height: 450px;
     margin-left: -10px;
     margin-right: -10px;
+    margin-top: -23px;
 }
 
+.linguagens_caixa {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 5%; */
+}
 
+.linguagens_caixa img {
+    height: 100px;
+}
 
+.html {
+    width: 200px;
+    height: 300px;
+    margin: 20px;
+    background-color: #8F9FE4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.css {
+    width: 200px;
+    height: 300px;
+    margin: 20px;
+    background-color: #8F9FE4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.js {
+    width: 200px;
+    height: 300px;
+    margin: 20px;
+    background-color: #8F9FE4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#linguagens {
+    padding: 25px;
+    border-radius: 50px;
+}
+
+#linguagens:hover{
+    cursor: pointer;
+    width: 250px;
+    height: 350px;
+}
+
+/* meus projetos */
+
+.meus_projetos {
+    background-image: url(imagens/pexels-monstera-production-7794360.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* filter: blur(2px);
+    -webkit-filter: blur(5px); */
+    height: 450px;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: 500px;
+    margin-top: -23px;
+    height: 650px;
+    padding: 1px;
+}
+
+.caixa_branca {
+    /* font-family: "Poppins", sans-serif;
+    font-weight: 100; */
+    /* font-style: normal; */
+    filter: none;
+    background-color: rgba(210, 187, 255, 0.283);
+    backdrop-filter: blur(5px);
+    margin: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.github img {
+    width: 200px;
+}
+
+.github {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
 
 /* responsividade */
 @media (min-width: 950px) {
+
     .close-icon {
         display: none;
     }
@@ -175,17 +279,25 @@ html {
 
 /* Estilos para telas menores de 950px */
 @media (max-width: 950px) {
+
+    .github {
+        flex-direction: column;
+    }
+
     .menu-toggle {
         display: none; /* Escondendo por padrão */
         cursor: pointer;
-        width: 25px;
+        width: 30px;
+        margin: 10px;
+        padding: 5px;
     }
 
     .bar {
         width: 25px;
         height: 3px;
-        background-color: black;
-        margin: 5px 0;
+        border-radius: 50px;
+        background-color: rgb(58, 58, 58);
+        margin: 6px;
     }
 
     /* Estilos para o botão "X" */
@@ -215,7 +327,7 @@ html {
         background-color: white;
         z-index: 1000;
         overflow-x: hidden;
-        padding-top: 60px;
+        /* padding-top: 60px; */
     }
 
     .sidebar ul {
@@ -303,4 +415,20 @@ html {
         width: 100%;
         margin-left: 15%;
     }
+}
+
+@media (max-width: 400px) {
+    .caixa2 {
+        display: none;
+    }
+
+    .caixa1 {
+        width: 100%;
+    
+    }
+
+    .caixa1_1 {
+        text-align: center;
+    }
+
 }
