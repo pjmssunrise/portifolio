@@ -105,6 +105,11 @@ html {
     margin-top: -23px;
 }
 
+.linguagens a {
+    text-decoration: none;
+    color: white;
+}
+
 .linguagens_caixa {
     height: 100%;
     display: flex;
@@ -281,8 +286,8 @@ html {
         background-color: #8F9FE4;
     }
 
-
-
+    
+    
 
     /* ausdfusodufaud */
 
@@ -428,6 +433,17 @@ html {
         width: 100%;
         margin-left: 15%;
     }
+
+    .linguagens {
+        height: 1500px;
+    }
+
+    .linguagens_caixa {
+        /* height: 2000px; */
+        flex-direction: column; 
+    }
+
+
 }
 
 @media (max-width: 400px) {
